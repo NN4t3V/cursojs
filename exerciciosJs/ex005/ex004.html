@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <!-- <script>
+        var nome = window.prompt('Digite seu nome: ')
+        document.write(`Olá ${nome}! Seu nome tem ${nome.length} letras<br>`)
+        document.write (`Seu nome em maiúsculas é ${nome.toUpperCase()}<br>`)
+        document.write(`Seu nome em letras minúsculas é ${nome.toLowerCase()}`)
+    </script> -->
+    <script>
+        // window.prompt -> responsável por 'armazenar o valor'
+        // document.write -> responsável por mostrar mensagem
+        // window.alert -> Como o próprio nome já diz, é responsável por mandar uma mensagem de alerta!
+        var nome = window.prompt('Digite um nome: ')
+        document.write(`Olá ${nome}! Seu nome tem ${nome.length} letras<br>`)
+        document.write(`Seu nome com letras maiúsculas fica:  ${nome.toUpperCase()}<br>`)
+        document.write(`Seu nome com letras minúsculas fica: ${nome.toLowerCase()}<br>`)
+
+        var n1 = Number.parseInt(window.prompt(`Digite um número: `))
+        var n2 = Number.parseInt(window.prompt(`Digite um valor: `))
+        valor = n1 + n2
+        window.alert(`Seu saldo na conta é de: ${valor.toFixed(2).replace('.',',')}`)
+        // Deixará no formato de "Dinheiro"  
+        window.alert(`Seu saldo na conta é de: ${valor.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}`)
+        // Deixará no  formato de "Real"
+    </script>
+</body>
+</html>

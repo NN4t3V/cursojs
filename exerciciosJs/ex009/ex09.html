@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação Nacional</title>
+    <style>
+        body{
+            font: normal 1.2em "Montserrat", serif;;
+            background-color: #3F7373;
+            text-align: center;
+            font-family: Thin 100 Italic;
+        }
+        h1{
+            color: #e9cdc3d2 ;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+        p{
+            color: #c3c9ce;
+        }
+        input{
+            background-color: #BF754B;
+        }
+        div#res{
+            color: #c3c9ce;
+        }
+    </style>
+</head>
+<body>
+    <!-- Exercício proposto é criar uma caixa onde pergunta qual o país em que a pessoa mora
+    E dizer se ela é estrangeira ou brasileira. -->
+    <h1>Certificado Nacional</h1>
+    <p>Qual o país em que você mora? <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="consultar()"></p>
+    <div id="res">
+    </div>
+    <script>
+        function consultar(){
+            var txtp = window.document.querySelector('input#txtpais')
+            var p = window.document.querySelector('div#res')
+            var p = String(txtp.value)
+            res.innerHTML += `Seu país é ${p} `
+            if(p == 'Brasil'){
+                res.innerHTML += `<p>Você é brasileiro!</p>`
+            } 
+            else{
+                    res.innerHTML = `<p>Você é um estrangeiro!</p>`
+            }
+
+        }
+    </script>
+</body>
+</html>

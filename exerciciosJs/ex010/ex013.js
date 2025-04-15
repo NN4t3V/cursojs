@@ -1,0 +1,34 @@
+var agora = new Date()
+var diaSem = agora.getDay()
+/* Dias da semana segundo o JavaScript:
+0 = Domingo
+1 = Segunda 
+... */
+console.log(diaSem)
+switch (diaSem){
+    case 0: 
+        console.log('Domingo')
+        break
+    case 1: 
+        console.log('Segunda')
+        break
+    case 2: 
+        console.log('Terça')
+        break
+    case 3:
+        console.log('Quarta')
+        break
+    case 4:
+        console.log('Quinta')
+        break
+    case 5: 
+        console.log('Sexta')
+        break
+    case 6:
+        console.log('Sábado')
+        break
+    default:
+        console.log(`[erro] Dia inválido`)
+        break
+}
+// Switch é útil para uso em soluções pontuais
