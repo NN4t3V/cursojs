@@ -16,11 +16,15 @@
     <h1>Olá Mundo!!!</h1>
     <p>Me livrei da maldição</p>
     <script>
-        var n1 = Number.parseInt(window.prompt('Digite um número:'))// É necessário fazer nesse formato porque o JS não entende a diferença do '+' pra soma e pra concatenação. xa\z\p
+        // var n1 = Number.parseInt(window.prompt('Digite um número:'))// É necessário fazer nesse formato porque o JS não entende a diferença do '+' pra soma e pra concatenação. 
+        // var n2 = Number.parseInt(window.prompt('Digite um número:'))
+        // s = n1 + n2
+        // window.alert(`A soma entre ${n1} e ${n2} é ${s}`) //Essa é uma das formas de fazer a interpolação atualizado pelo ECMA
+        
+        var n1 = Number.parseInt(window.prompt('Digite um número:'))
         var n2 = Number.parseInt(window.prompt('Digite um número:'))
         s = n1 + n2
-        window.alert(`A soma entre ${n1} e ${n2} é ${s}`) //Essa é uma das formas de fazer a interpolação atualizado pelo ECMA
-        
+         window.alert('o resultado da soma é: ' + String(s)) // Este String(s) serve como um exemplo redundante caso precise converter de número para Srting
     </script>
 
 </body>
