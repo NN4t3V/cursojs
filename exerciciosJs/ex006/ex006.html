@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma com JS</title>
+    <style>
+        body {
+            background-color: cadetblue;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        button {
+            background-color: darkgray;
+            margin-bottom: 5%;
+        }
+
+        /* input{
+            text-align: left;
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>Somando dois números</h1>
+    <button onclick="soma()">Clique para escolher: </button>
+    <p>
+        <input type="number" id="numero1" >
+        +
+        <input type="number" id="numero2">
+        <br>
+        <textarea name="resposta" id="res">Resultado</textarea>
+    </p>
+
+    <script>
+        function soma(){
+            
+            // let n1 = Number(window.prompt('Diga um número'))
+            // let n2 = Number(window.prompt('Diga outro número'))
+
+            let n1 = parseInt(document.querySelector('input#numero1'))
+            let n2 = parseInt(document.querySelector('input#numero2'))
+
+            let res = document.querySelector('textarea#res')
+
+            adicao = n1 + n2
+
+            res.innerHTML = `O resultado da soma ${n1} e ${n2} é ${adicao}`
+            //Retorna um NaN nos 3 valores
+
+
+            //res.innerHTML = `O resultado da soma ${n1} e ${n2} é ${adicao}`
+        }
+    </script>
+</body>
+
+</html>

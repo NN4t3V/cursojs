@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número com JS</title>
+    <style>
+        body{
+            background-color: coral;
+        }
+
+        h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+        }
+
+       button{
+        font-size: 12pt;
+        padding: 30px;
+       }
+    </style>
+</head>
+<body>
+    <h1>Trabalhado com números</h1>
+    <button onclick="calcular()">Clique aqui para calcular</button>
+    <p><textarea id="res">resulado</textarea></p>
+    <!-- <section id="res">
+        <p>O resultado vem aqui: </p>
+    </section> -->
+    <script>
+        window.alert('Seja bem vindo!')
+            function calcular(){
+            let num = window.prompt('Digite aqui um número: ')
+            let res = document.querySelector('textarea#res')
+            // let res = document.querySelector('section#res')||(".myclass") e etc, porque pede seletores
+            // COMO DIZ NO NOME, SELECTOR
+
+            res.innerHTML = `O dobro de ${num} é ${num*2} e a metade do dobro é ${num*2/2}!`
+        }
+
+    </script>
+</body>
+</html>
